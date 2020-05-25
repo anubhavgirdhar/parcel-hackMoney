@@ -1,0 +1,42 @@
+#landing {
+    margin-top:2px;
+    width:100%;
+    height:90vh; 
+    display:flex; 
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: #F6F9FC;
+}
+  
+#title {
+    width:100%;
+    max-width:1200px;
+    font-size:32px;
+    font-weight:600;
+    text-align:center;
+    line-height:1.2;
+    color:#03255A;
+} 
+
+#description {
+    width:100%;
+    max-width:1200px;
+    margin-top:15px;
+    text-align:center;
+    font-size:16px;
+    font-weight:400;
+    color:#03255A;
+    letter-spacing:0.5px;
+}
+
+#steps-container {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+}
+
+#tail {
+    margin:24px auto;
+}

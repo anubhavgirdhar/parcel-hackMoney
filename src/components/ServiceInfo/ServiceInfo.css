@@ -1,0 +1,31 @@
+.steps-item {
+    width:50%;
+    padding:112px 48px;
+    text-align:center;
+}
+
+.steps-icon img { width:200px; }
+
+.steps-title {
+    font-size:24px;
+    font-weight:600;
+    margin-top:24px;
+    margin-bottom:24px;
+    color:#F6F9FC;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps-title img {
+    width:24px;
+    margin-right:10px;
+}
+
+.steps-description {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    color:#F6F9FC;
+    margin-bottom:24px;
+}

@@ -1,0 +1,18 @@
+#footer-div {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+}
+
+#footer-div span {
+    font-size: 16px;
+    color:#03265b;
+    margin:20px 20px;
+    font-weight: bolder;
+}
+
+#footer-div img {
+    width:18px;
+}
