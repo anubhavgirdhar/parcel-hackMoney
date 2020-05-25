@@ -184,18 +184,18 @@ function SwapDashboard({ web3, tokenAddresses, address, setAddress, balances, se
         functionHashArray.push(multisenderFuncHash);
         console.log(poolAddressArray);
         console.log(functionHashArray);
-        const result = wallet.methods.execute([...poolAddressArray], [...functionHashArray]).send({ from: window.ethereum.selectedAddress, value: Number(fromAmount) * Math.pow(10, 18).toString() });
-        result.on("transactionHash", (hash) => {
-            alert("Transaction sent successfully! Waiting for confirmation....")
-            console.log("Transaction Hash is ", hash)
-        }).once("confirmation", (confirmationNumber, receipt) => {
-            if (receipt.status) {
-                alert("Transaction processed successfully")
-            } else {
-                alert("Transaction failed to process");
-            }
-            console.log(receipt)
-        })
+        await wallet.methods.execute([...poolAddressArray], [...functionHashArray]).send({ from: window.ethereum.selectedAddress, value: Number(fromAmount) * Math.pow(10, 18).toString() });
+        // result.on("transactionHash", (hash) => {
+        //     alert("Transaction sent successfully! Waiting for confirmation....")
+        //     console.log("Transaction Hash is ", hash)
+        // }).once("confirmation", (confirmationNumber, receipt) => {
+        //     if (receipt.status) {
+        //         alert("Transaction processed successfully")
+        //     } else {
+        //         alert("Transaction failed to process");
+        //     }
+        //     console.log(receipt)
+        // })
     }
 
     return <Fragment>
